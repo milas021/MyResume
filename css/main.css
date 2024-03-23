@@ -1,0 +1,222 @@
+* {
+  direction: rtl;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Sahel;
+  src: url("../fonts/Sahel.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Lalezar;
+  src: url("../fonts/Lalezar-Regular.ttf") format("ttf");
+  font-weight: normal;
+}
+.body {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+}
+.body .slide-bar {
+  background-color: black;
+  height: 100vh;
+  width: 20%;
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+}
+.body .slide-bar-box {
+  background-color: #2fbf71;
+  height: 30vh;
+  position: relative;
+}
+.body .slide-bar-box .slide-bar-img-box {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: -75px;
+}
+.body .slide-bar-box .slide-bar-img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.body .slide-bar-content {
+  color: white;
+  padding: 100px 20px;
+  height: 80vh;
+}
+.body .content {
+  display: flex;
+  flex-flow: column;
+  right: 20%;
+  width: 80%;
+  position: absolute;
+  background-color: #343a40;
+}
+.body .content .main {
+  background-color: #343a40;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.body .content .main-img-box {
+  width: 400;
+  height: 400;
+}
+.body .content .main-img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.body .content .main-title {
+  margin: 10px;
+}
+.body .content .about-me {
+  background-color: #343a40;
+  display: flex;
+  padding: 80px 150px;
+  flex-flow: column;
+  top: 100vh;
+}
+.body .content .education {
+  padding: 80px 150px;
+  background-color: #343a40;
+}
+.body .content .skills {
+  padding: 80px 150px;
+  display: flex;
+  flex-direction: column;
+}
+.body .content .skills .skills-container {
+  display: flex;
+  flex-flow: row;
+}
+.body .content .skills .skills-wrapper {
+  width: 33.3333%;
+}
+.body .content .skills .skills-wrapper .skill {
+  background-color: black;
+  padding: 12px;
+  margin: 8px;
+  height: 80px;
+}
+.body .content .skills .skills-wrapper .skill .progress-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.body .content .skills .skills-wrapper .skill .progress-wrapper .progress-title .level {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.body .content .skills .skills-wrapper .skill .progress-wrapper .progress-title .name {
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.body .content .skills .skills-wrapper .skill .progress-wrapper .progress {
+  height: 4px;
+  width: 100%;
+  background-color: #343a40;
+  position: absolute;
+  bottom: 30px;
+}
+.body .content .skills .skills-wrapper .skill .progress-wrapper .progress-bar {
+  height: 4px;
+  background-color: #2fbf71;
+  width: 50%;
+}
+
+.btn {
+  width: 130px;
+  height: 45px;
+  background-color: #2fbf71;
+  font-size: 15px;
+  padding: 0 8px;
+  color: white;
+  font-family: Sahel;
+  box-shadow: -4px 4px #fff;
+  transition: all 0.5s;
+  font-weight: bold;
+  margin: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #2fbf71;
+  background-color: white;
+}
+
+.btn-box {
+  display: flex;
+  flex-flow: row;
+  margin-top: 40px;
+}
+
+.menu-item {
+  text-decoration: none;
+  list-style: none;
+  margin: 20px 0;
+  font-size: 24px;
+  font-family: Sahel;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+}
+.menu-item span {
+  margin-right: 15px;
+}
+.menu-item img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.menu-item:hover {
+  letter-spacing: 1px;
+  color: #2fbf71;
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 60px;
+  color: white;
+  font-family: Lalezar;
+  letter-spacing: 2px;
+}
+
+.heading-2, .text {
+  margin-top: 12px;
+  font-family: Sahel;
+  font-size: 30px;
+  color: white;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.text-box {
+  background-color: black;
+  position: relative;
+  padding: 20px;
+}
+
+.card {
+  height: 40px;
+  width: 80px;
+  background-color: #2fbf71;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}/*# sourceMappingURL=main.css.map */

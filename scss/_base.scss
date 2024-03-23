@@ -1,0 +1,53 @@
+$color-primary :#2fbf71;
+$color-secondary: #343a40;
+$color-white: white;
+$color-black: black;
+
+$font-lalezar: Lalezar;
+$font-sahel: Sahel;
+
+
+
+* {
+    direction: rtl;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Sahel;
+    src: url('../fonts/Sahel.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Lalezar;
+    src: url('../fonts/Lalezar-Regular.ttf') format('ttf');
+    font-weight: normal;
+}
+
+@mixin flex-column{
+    display: flex;
+    flex-flow: column;
+}
+
+@mixin flex-row{
+    display: flex;
+    flex-flow: row;
+}
+
+@mixin content-bar{
+    right: 20%;
+    width: 80%;
+    position: absolute;
+
+}
+@mixin img-box($size :100px) {
+    width: $size ;
+    height: $size;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}

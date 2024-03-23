@@ -1,0 +1,103 @@
+.btn {
+    width: 130px;
+    height: 45px;
+    background-color: $color-primary;
+    font-size: 15px;
+    padding: 0 8px;
+    color: $color-white;
+    font-family: $font-sahel;
+    box-shadow: -4px 4px #fff;
+    transition: all 0.5s;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-primary;
+        background-color: $color-white;
+    }
+
+}
+
+.btn-box {
+    display: flex;
+    flex-flow: row;
+    margin-top: 40px;
+
+}
+
+.menu-item {
+    text-decoration: none;
+    list-style: none;
+    margin: 20px 0;
+    font-size: 24px;
+    font-family: $font-sahel;
+    font-weight: bold;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+
+    span {
+        margin-right: 15px;
+    }
+
+    img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        // transform: scale(.75);
+
+    }
+
+    &:hover {
+        letter-spacing: 1px;
+        color: $color-primary;
+        cursor: pointer;
+
+    }
+
+}
+
+.heading {
+    font-size: 60px;
+    color: $color-white;
+    font-family: $font-lalezar;
+    letter-spacing: 2px;
+}
+
+.heading-2 {
+    margin-top: 12px;
+    font-family: $font-sahel;
+    font-size: 30px;
+    color: $color-white;
+
+}
+
+.text {
+    @extend .heading-2;
+    font-size: 18px;
+    line-height: 40px;
+
+}
+
+.text-box {
+    background-color: $color-black;
+    position: relative;
+    padding: 20px;
+}
+
+.card {
+    height: 40px;
+    width: 80px;
+    background-color: $color-primary;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+
+}

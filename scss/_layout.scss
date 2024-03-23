@@ -1,0 +1,149 @@
+.body {
+    @include flex-row;
+    position: relative;
+
+    .slide-bar {
+
+        background-color: $color-black;
+        height: 100vh;
+        width: 20%;
+        display: flex;
+        flex-flow: column;
+        position: fixed;
+
+        &-box {
+            background-color: $color-primary;
+            height: 30vh;
+            position: relative;
+
+            .slide-bar-img-box {
+
+                $box-size : 150px;
+                @include img-box($box-size);
+                position: absolute;
+                right: 50%;
+                transform: translateX(50%);
+                bottom: -$box-size/2;
+            }
+
+        }
+
+        &-content {
+            color: $color-white;
+            padding: 100px 20px;
+            height: 80vh;
+
+        }
+
+
+    }
+
+    .content {
+        @include flex-column;
+        @include content-bar;
+        // padding: 80px 150px;
+        background-color: $color-secondary;
+
+        .main {
+
+            background-color: $color-secondary;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+            &-img-box {
+                @include img-box(400);
+            }
+
+            &-title {
+                margin: 10px;
+
+
+            }
+
+        }
+
+        .about-me {
+            background-color: $color-secondary;
+            display: flex;
+            padding: 80px 150px;
+            flex-flow: column;
+            top: 100vh;
+
+        }
+
+        .education {
+            padding: 80px 150px;
+            // این پدینگ باید به همه عضو های کانتنت به جز مین داده شود دنبال راه حلی بهتر از این میگردم
+            background-color: $color-secondary;
+        }
+
+        .skills {
+            padding: 80px 150px;
+            display: flex;
+            flex-direction: column;
+
+            .skills-container {
+                display: flex;
+                flex-flow: row;
+            }
+
+            .skills-wrapper {
+               width: 33.3333%;
+                .skill {
+                    background-color: $color-black;
+                    padding: 12px;
+                    margin: 8px;
+                    height: 80px;
+
+
+                    .progress-wrapper {
+                        position: relative;
+                        height: 100%;
+                        width: 100%;
+
+                        .progress-title {
+                           
+                            .level {
+                                position: absolute;
+                                right: 0;
+                                top: 10px;
+                            }
+
+                            .name {
+                                position: absolute;
+                                left: 0;
+                                top: 10px;
+                            }
+                        }
+
+                        .progress {
+                            height: 4px;
+                            width: 100%;
+                            background-color: $color-secondary;
+                            position: absolute;
+                            bottom: 30px;
+                            
+
+                            &-bar {
+                                height: 4px;
+                                background-color: $color-primary;
+                                width: 50%;
+
+                            }
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
+
+    }
+
+
+}
