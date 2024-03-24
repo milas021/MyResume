@@ -44,7 +44,7 @@
         // padding: 80px 150px;
         background-color: $color-secondary;
 
-        .main {
+        .home {
 
             background-color: $color-secondary;
             height: 100vh;
@@ -139,9 +139,6 @@
                 }
 
             }
-
-
-
         }
 
         .contact-info {
@@ -157,10 +154,17 @@
                 &-item {
                     margin: 0px 8px;
                     @include img-box(60px);
+                   transition: 0.5s all;
+
+                    &:hover{
+                        transform: translateY(-5px);
+                        background-color: $color-primary;
+                        border-radius: 50%;
+                        color: $color-primary;
+                    }
                 }
 
                 &-link {
-                    padding: 8x;
                     text-decoration: none;
                     // todo هر کاری کردم نتونستم این عکس ها رو ریسایز کنم
                 }

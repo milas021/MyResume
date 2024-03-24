@@ -20,11 +20,18 @@
             </div>
             <div class="sidebar-content">
 
-                <div class="menu-item"><img src="images/home.png" alt=""><span>خانه</span></i></div>
-                <div class="menu-item"><img src="images/about-me.png" alt=""><span>درباره من</span></div>
-                <div class="menu-item"><img src="images/education.png" alt=""><span>تحصیلات</span></div>
-                <div class="menu-item"><img src="images/skill.png" alt=""><span>مهارت ها</span></div>
-                <div class="menu-item"><img src="images/contact-us.png" alt=""><span>ارتباط با من</span></div>
+                <div class="menu-item" onclick="Scroll('home')"><img src="images/home.png" alt=""><span>خانه</span></i>
+                </div>
+                <div class="menu-item" onclick="Scroll('about-me')"><img src="images/about-me.png" alt=""><span>درباره
+                        من</span></div>
+                <div class="menu-item" onclick="Scroll('education')"><img src="images/education.png"
+                        alt=""><span>تحصیلات</span></div>
+                <div class="menu-item" onclick="Scroll('skills')"><img src="images/skill.png" alt=""><span>مهارت
+                        ها</span>
+                </div>
+                <div class="menu-item" onclick="Scroll('contact-info')"><img src="images/contact-us.png"
+                        alt=""><span>ارتباط با
+                        من</span></div>
 
 
             </div>
@@ -34,23 +41,23 @@
         <!-- start of content -->
         <div class="content">
 
-            <!-- strt of main -->
-            <div class="main">
+            <!-- strt of home -->
+            <div id="home" class="home">
 
-                <div class="main-title">
+                <div class="home-title">
                     <h1 class="heading">میلاد امیرآبادی</h1>
                     <p class="text">برنامه نویس نامی کشور <br>برنامه نویس بک اند</p>
 
                     <button class="btn">دریافت رزومه</button>
                 </div>
-                <div class="main-img-box"><img src="images/IMG_8138.jpg"></div>
+                <div class="home-img-box"><img src="images/IMG_8138.jpg"></div>
             </div>
-            <!-- end of main -->
+            <!-- end of home -->
 
 
 
             <!-- ---------------- about-me ---------------->
-            <div class="about-me">
+            <div id="about-me" class="about-me">
                 <h1 class="heading">درباره من</h1>
                 <h1 class="heading-2">میلاد امیرآبادی</h1>
                 <p class="text">برنامه نویس مورد تایید مایکروسافت ، دارای مدارک MCSA ، MCSD و MCT از این کمپانی، مشاور و
@@ -67,7 +74,7 @@
             </div>
 
             <!-- ---------------- education ---------------->
-            <div class="education">
+            <div id="education" class="education">
                 <h1 class="heading">تحصیلات</h1>
                 <div class="text-box">
                     <div class="card">سال 1400</div>
@@ -77,7 +84,7 @@
             </div>
 
             <!-- ---------------- skills ---------------->
-            <div class="skills">
+            <div id="skills" class="skills">
                 <h1 class="heading">مهارت ها</h1>
                 <div class="skills-container">
                     <div class="skills-wrapper">
@@ -232,7 +239,7 @@
             </div>
 
             <!-- ---------------- contact-info ---------------->
-            <div class="contact-info">
+            <div id="contact-info" class="contact-info">
                 <h3 class="heading">ارتباط با من</h3>
                 <ul class="social-media">
                     <li class="social-media-item">
@@ -242,11 +249,11 @@
                     </li>
 
                     <li class="social-media-item">
-                       <!-- <div class="test"> -->
+                        <!-- <div class="test"> -->
                         <a href="#" class="social-media-link">
                             <img src="images/linkedin.png">
                         </a>
-                       <!-- </div> -->
+                        <!-- </div> -->
                     </li>
 
                     <li class="social-media-item">
@@ -272,5 +279,19 @@
 
 
 </body>
+
+<script>
+    // var home = document.getElementById('home');
+    // home.addEventListener('onclick' ,function()
+    // {
+    //     alert('XXXX');
+    // });
+
+
+    function Scroll(sectionId) {
+        var element = document.getElementById(sectionId);
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+</script>
 
 </html>
