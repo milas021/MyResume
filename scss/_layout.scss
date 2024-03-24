@@ -2,7 +2,7 @@
     @include flex-row;
     position: relative;
 
-    .slide-bar {
+    .sidebar {
 
         background-color: $color-black;
         height: 100vh;
@@ -16,7 +16,7 @@
             height: 30vh;
             position: relative;
 
-            .slide-bar-img-box {
+            .sidebar-img-box {
 
                 $box-size : 150px;
                 @include img-box($box-size);

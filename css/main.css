@@ -18,7 +18,7 @@
   flex-flow: row;
   position: relative;
 }
-.body .slide-bar {
+.body .sidebar {
   background-color: black;
   height: 100vh;
   width: 20%;
@@ -26,12 +26,12 @@
   flex-flow: column;
   position: fixed;
 }
-.body .slide-bar-box {
+.body .sidebar-box {
   background-color: #2fbf71;
   height: 30vh;
   position: relative;
 }
-.body .slide-bar-box .slide-bar-img-box {
+.body .sidebar-box .sidebar-img-box {
   width: 150px;
   height: 150px;
   position: absolute;
@@ -39,12 +39,12 @@
   transform: translateX(50%);
   bottom: -75px;
 }
-.body .slide-bar-box .slide-bar-img-box img {
+.body .sidebar-box .sidebar-img-box img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-.body .slide-bar-content {
+.body .sidebar-content {
   color: white;
   padding: 100px 20px;
   height: 80vh;
