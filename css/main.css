@@ -132,6 +132,31 @@
   background-color: #2fbf71;
   width: 50%;
 }
+.body .content .contact-info {
+  padding: 80px 150px;
+}
+.body .content .contact-info .social-media {
+  display: flex;
+  flex-flow: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.body .content .contact-info .social-media-item {
+  margin: 0px 8px;
+  width: 60px;
+  height: 60px;
+}
+.body .content .contact-info .social-media-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.body .content .contact-info .social-media-link {
+  padding: 8x;
+  text-decoration: none;
+}
 
 .btn {
   width: 130px;

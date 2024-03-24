@@ -91,7 +91,8 @@
             }
 
             .skills-wrapper {
-               width: 33.3333%;
+                width: 33.3333%;
+
                 .skill {
                     background-color: $color-black;
                     padding: 12px;
@@ -105,7 +106,7 @@
                         width: 100%;
 
                         .progress-title {
-                           
+
                             .level {
                                 position: absolute;
                                 right: 0;
@@ -125,7 +126,7 @@
                             background-color: $color-secondary;
                             position: absolute;
                             bottom: 30px;
-                            
+
 
                             &-bar {
                                 height: 4px;
@@ -143,7 +144,30 @@
 
         }
 
-    }
+        .contact-info {
 
+            padding: 80px 150px;
+
+
+            .social-media {
+                @include flex-row;
+                @include flex-center;
+                list-style: none;
+
+                &-item {
+                    margin: 0px 8px;
+                    @include img-box(60px);
+                }
+
+                &-link {
+                    padding: 8x;
+                    text-decoration: none;
+                    // todo هر کاری کردم نتونستم این عکس ها رو ریسایز کنم
+                }
+            }
+
+        }
+
+    }
 
 }

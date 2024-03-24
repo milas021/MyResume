@@ -35,6 +35,12 @@ $font-sahel: Sahel;
     flex-flow: row;
 }
 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin content-bar{
     right: 20%;
     width: 80%;
