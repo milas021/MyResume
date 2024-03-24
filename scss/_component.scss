@@ -23,7 +23,7 @@
     display: flex;
     flex-flow: row;
     margin-top: 40px;
-    
+
 }
 
 .menu-item {
@@ -97,4 +97,33 @@
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.midlevel {
+
+    .progress {
+        .progress-bar {
+            width: 50%;
+
+        }
+    }
+}
+
+.advanced {
+    .progress {
+        .progress-bar {
+            width: 75%;
+
+        }
+    }
+
+}
+
+.pro {
+    .progress {
+        .progress-bar {
+            width: 95%;
+
+        }
+    }
 }

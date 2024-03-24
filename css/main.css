@@ -130,7 +130,6 @@
 .body .content .skills .skills-wrapper .skill .progress-wrapper .progress-bar {
   height: 4px;
   background-color: #2fbf71;
-  width: 50%;
 }
 .body .content .contact-info {
   padding: 80px 150px;
@@ -250,4 +249,16 @@
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.midlevel .progress .progress-bar {
+  width: 50%;
+}
+
+.advanced .progress .progress-bar {
+  width: 75%;
+}
+
+.pro .progress .progress-bar {
+  width: 95%;
 }/*# sourceMappingURL=main.css.map */
