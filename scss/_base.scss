@@ -45,11 +45,11 @@ $font-sahel: Sahel;
     right: 20%;
     width: 80%;
     position: absolute;
-
 }
 @mixin img-box($size :100px) {
     width: $size ;
     height: $size;
+    border-radius: 50%;
 
     img {
         width: 100%;
